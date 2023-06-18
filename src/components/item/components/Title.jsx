@@ -14,11 +14,9 @@ export default function Title({
       className={titleStyle}
       onClick={() => {
         setEdit(true);
-        toast("Task edited!", "info");
       }}
       onDoubleClick={() => {
         setEdit(true);
-        toast("Task edited!", "info");
       }}
       onBlur={(e) => {
         setEdit((prev) => {
@@ -41,9 +39,9 @@ export default function Title({
                 }
               });
             });
-            toast("Task edited!", "info");
           }
         });
+        toast("Task edited!", "info");
       }}
       contentEditable={edit}
       suppressContentEditableWarning={true}

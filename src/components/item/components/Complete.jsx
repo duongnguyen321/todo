@@ -21,8 +21,8 @@ export default function Complete({
           });
         });
         toast(
-          `Task ${completed ? "Completed" : "Not Completed"}!`,
-          `${completed ? "success" : "error"}`
+          `Task ${completed ? "Not Completed" : " Completed"}!`,
+          `${completed ? "error" : "success"}`
         );
       }}
     >

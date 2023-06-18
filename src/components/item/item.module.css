@@ -9,6 +9,7 @@
 .idStyle {
   width: 10%;
   text-align: start;
+  user-select: none;
 }
 .titleStyle {
   text-align: center;
