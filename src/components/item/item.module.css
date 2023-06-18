@@ -17,4 +17,5 @@
 .completeStyle {
   width: 10%;
   text-align: end;
+  user-select: none;
 }
