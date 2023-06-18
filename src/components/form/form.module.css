@@ -11,11 +11,12 @@
   border: 1px solid #555;
 }
 .input {
-    height: 100%;
-    width: calc(100% - 3rem);
-    padding: 0 1rem;
-    background: none;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #fefefe;
+  height: 100%;
+  width: calc(100% - 3rem);
+  padding: 0 1rem;
+  background: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fefefe;
+  user-select: none;
 }
