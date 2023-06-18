@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import formStyle from "./form.module.css";
-export default function TaskForm({ setTask }) {
+export default function TaskForm({ setTask, toast }) {
   const { form, input } = formStyle;
   const inputRef = useRef();
   useEffect(() => {
@@ -21,13 +21,11 @@ export default function TaskForm({ setTask }) {
       setTask((prev) => [...prev, task]);
     }
     inputRef.current.value = "";
+    toast("Task added!", "success");
   };
   return (
     <form className={form} onSubmit={handleSubmit}>
       <input className={input} placeholder="Enter the task!" ref={inputRef} />
-      <button type="submit" className="d-none">
-        Submit
-      </button>
     </form>
   );
 }
